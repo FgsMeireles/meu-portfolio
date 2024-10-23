@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+/* Estilos Globais */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #f1f1f1;
+    background-color: #333;
+}
+
+/* Navbar */
+.navbar-brand {
+    color: #333;
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: #333;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #FFD700;
+}
+
+/* Header */
+#profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+header .btn {
+    margin-top: 10px;
+}
+
+header .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+header .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+
+
+#profile-photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Hard Skills */
+#skills i {
+    font-size: 50px;
+    color: #FFD700;
+    transition: transform 0.3s ease;
+}
+
+section#skills .row {
+    justify-content: center;
+}
+
+section#skills .col-md-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#skills i {
+    font-size: 36px;
+    color: #fff;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    cursor: pointer;
+}
+
+#skills i:hover {
+    transform: scale(1.2);
+    color: #FFD700;
+}
+
+#skills p {
+    margin-top: 10px;
+}
+
+.description-box {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #333;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.text-animate {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Projetos */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.project-description {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.project-image {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+/* Formulario */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.form-input,
+.form-textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+}
